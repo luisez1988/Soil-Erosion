@@ -152,7 +152,7 @@
 	<img class="fragment" src="https://d3i71xaburhd42.cloudfront.net/b6e3d469351a045ce3caa88d1544ce9b7edb58db/2-Figure1-1.png" width="70%">
 	</div>
 	<div class='col'>
-		<iframe width="100%" height="300" src="https://www.youtube.com/embed/wU1C3_UPSU8?si=XIJrwTyV0m3r-XCQ?autoplay=1" data-preload  style="margin-top: 100px;"></iframe>
+		<iframe width="100%" height="400px" src="https://www.youtube.com/embed/wU1C3_UPSU8?si=XIJrwTyV0m3r-XCQ?autoplay=1" data-preload  style="margin-top: 50px;"></iframe>
 	</div>
 	</div>
 
@@ -234,9 +234,355 @@ The Hydraulic Engineer Circular 18 (HEC-18) is the reference manual for bridge s
 </section>
 
 <section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
-<h1>Calculation philosophy</h1>
+	<h1>Calculation philosophy</h1>
+<ul>
+	<li class='fragment'> The U.S. Congress recommended that the FHWA apply <strong style='color:#7abbe6'>risk-based</strong> and <strong style='color:#7abbe6'>data-drive</strong> approaches to calculate scour.</li>
+	<li class='fragment'>Prior to risk-based calculations all bridges would have been <strong style='color:#7abbe6'>design</strong> for scour for a <strong style='color:#7abbe6'>100 yr</strong> return period flood \(Q_{100}\) and then <strong style='color:#7abbe6'>checked</strong> with a 500 yr return period flow \(Q_{500}\)</li>
+	<li class='fragment'>Note that hydraulic return periods are <strong style='color:#7abbe6'>smaller</strong> than scour return periods, because there is a <span class='atb'>reasonable high likelihood</span> that hydraulic design flood <strong style='color:#7abbe6'>will be exceeded during the service life of the bridge</strong>.</li>
+</ul>
+</section>
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<h1>HEC-18 guidance</h1>
+<div class='textBox' style='margin-top: 0px;margin-left: 0px;'>
+From the HEC-18 manual: "The interdisciplinary team needs to apply <strong style='color:#7abbe6'>engineering judgement</strong> in comparing results obtained with <strong style='color:#7abbe6'>scour computations</strong> and <strong style='color:#7abbe6'>available hydrologic and hydraulic data</strong> ... at the site to achieve a <strong style='color:#7abbe6'>reasonable and prudent design</strong>. "
+</div>
+
+Such data should include:
+<ul>
+	<li class='fragment'>Performance of existing structures during past floods.</li>
+	<li class='fragment'> Effects of regulation and control of flood discharge.</li>
+	<li class='fragment'> Hydrologic characteristics and flood history of the stream and similar streams.</li>
+	<li class='fragment'>Wheater the bridge has redundant structural elements.</li>
+</ul>
+</section>
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+
+<figure style="margin-top: -20px;">
+<img src='FiguresGeneral/flow_chart.PNG' width='75%'/>
+<footer style='margin-top: px;font-size: 0.8em;'> <em></em> </footer>
+</figure>
+</section>
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<h1>Contraction scour</h1>
+<div class='textBox' style='margin-top: 0px;margin-left: 0px;'>
+Contraction scour occurs due to the <span class='atb'>strangulation</span> of the cross section due to the piers and abutments of the bridge protruding into the channel</div>
+
+<figure>
+<img src='FiguresGeneral/Contraction scour.svg' width='100%'/>
+<footer style='margin-top: px;font-size: 0.8em;'> <em></em> </footer>
+</figure>
+</section>
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<div class='textBox' style='margin-top: 0px;margin-left: 0px;'>
+According to the HEC-18 manual, contraction scour cross sections can be classified into <span class='atb'>four cases</span>.
+</div>
+
+<ol>
+	<li class='fragment'> <strong style='color:#7abbe6'> Overbank flow </strong>forced into main channel.</li>
+	<li class='fragment'> <strong style='color:#7abbe6'>No overbank</strong> but section becomes narrower.</li>
+	<li class='fragment'> <strong style='color:#7abbe6'>Relief bridge in overbank</strong> with no sediment transport (i.e., <strong style='color:#7abbe6'>clear water conditions</strong>).</li>
+	<li class='fragment'> Relief bridge with <strong style='color:#7abbe6'>secondary stream in overbank</strong> with bed transport (i.e., <strong style='color:#7abbe6'>live bed conditions</strong>)</li>
+</ol>
+
+<div class='container'>
+<div class='col'>
+<div class='defBox' name='Clear water conditions:' style='margin-top: 10px;margin-left: 0px;'>
+Occur when there is no sediment transport. <br>
+\(\theta \leq \theta_c\)
+</div>
+</div>
+<div class='col'>
+<div class='defBox' name='Live bed conditions:' style='margin-top: 10px;margin-left: 5px;'>
+Occur when there is sediment transport. <br>
+\(\theta > \theta_c\)
+</div>
+</div>
+</div>
 
 </section>
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<h2>Case 1: Overbank flow</h2>
+<div class='textBox' style='margin-top: 0px;margin-left: 0px;'>
+This case has three subcases:
+<ol type="a">
+<li class='fragment'>Abutment projecting into the channel</li>
+<li class='fragment'>Abutment does not project into channel but overbank is completely obstructed.</li>
+<li class='fragment'>Abutments are set back from maine channel.</li>
+</ol>
+</div>
+<figure>
+<img src='https://images.nationalgeographic.org/image/upload/t_edhub_resource_key_image/v1638892519/EducationHub/photos/vistula-river.jpg' width='50%'/>
+<footer style='margin-top: px;font-size: 0.8em;'> <em></em> </footer>
+</figure>
+
+</section>
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<h3>Case 1a: Abutment projecting to main channel </h3>
+<div class='container'>
+<div class='col'>
+<ul>
+	<li>Flow from the overbank is <span class='atb'>forced to the main channel</span> </li>
+	<li>Flow in the overbank needs to acount for different <span class='atb'>surface roughness</span> if <strong style='color:#7abbe6'>vegetated</strong></li>
+	<li class='fragment'>The overbank flow might be considered in <span class='atb'>clear water conditions</span> due to vegetation.</li>
+
+</ul>
+</div>
+<div class='col'>
+	<figure>
+		<img src='FiguresGeneral/case1a.PNG' width='70%'/>
+		<footer style='margin-top: px;font-size: 0.8em;'> <em></em> </footer>
+		</figure>
+</div>
+</div>
+
+</section>
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+
+<div class='container'>
+	<div class='col'>
+		<h3>Case 1b: Overbank fully blocked</h3>
+		<figure>
+			<img src='FiguresGeneral/case1b.PNG' width='70%'/>
+			<footer style='margin-top: px;font-size: 0.8em;'> <em></em> </footer>
+			</figure>
+	</div>
+	<div class='col'>
+		<h3>Case 1c: Abutments set back</h3>
+		<figure>
+			<img src='FiguresGeneral/case1c.PNG' width='70%'/>
+			<footer style='margin-top: px;font-size: 0.8em;'> <em></em> </footer>
+		</figure>
+	</div>
+	</div>
+
+</section>
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<h2>Case 2: No overbank</h2>
+
+<div class='container'>
+<div class='col'>
+	Case 2a: Bridge over narrower section.
+	<figure>
+		<img src='FiguresGeneral/case2a.PNG' width='50%'/>
+		<footer style='margin-top: px;font-size: 0.8em;'> <em></em> </footer>
+	</figure>
+</div>
+<div class='col'>
+Case 2b: Bridge abutments and piers constrict flow.
+<figure>
+<img src='FiguresGeneral/case2b.PNG' width='70%'/>
+<footer style='margin-top: px;font-size: 0.8em;'> <em></em> </footer>
+</figure>
+</div>
+</div>
+
+</section>
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<h2>Case 3: Relief bridge in overbank in clear water conditions</h2>
+<div class='container'>
+<div class='col'>
+<ul>
+	<li> Part of the flow in the overbank <span class='atb'>flows below</span> the relief bridge. </li>
+	<li>This is a <strong style='color:#7abbe6'>complex</strong> design scenario.</li>
+</ul>
+</div>
+<div class='col'>
+<figure>
+<img src='FiguresGeneral/case3.PNG' width='100%'/>
+<footer style='margin-top: px;font-size: 0.8em;'> <em></em> </footer>
+</figure>
+</div>
+</div>
+</section>
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<h2>Case 4: Relief bridge with secondary stream in overbank</h2>
+<div class='container'>
+<div class='col'>
+<ul>
+	<li> A secondary tributary stream <span class='atb'>flows below</span> the relief bridge. </li>
+	<li>This is a <strong style='color:#7abbe6'>complex</strong> design scenario.</li>
+</ul>
+</div>
+<div class='col'>
+<figure>
+<img src='FiguresGeneral/case4.PNG' width='100%'/>
+<footer style='margin-top: px;font-size: 0.8em;'> <em></em> </footer>
+</figure>
+</div>
+</div>
+
+
+</section>
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<h1>Calculation of contraction scour</h1>
+
+<div class='textBox' style='margin-top: 0px;margin-left: 0px;'>
+Calculation of contraction scour is carried out differently for <strong style='color:#7abbe6'>clear water</strong> and <strong style='color:#7abbe6'>live bed</strong> conditions.
+</div>
+
+<ul>
+<li class='fragment'>In the case of <strong style='color:#7abbe6'>live bed conditions</strong> the fully developed scour depth reaches equilibrium (\(\alpha=1\)) when bed transport in the <span class='atb'>upstream section</span> equals the bed transport in the <span class='atb'>contracted section</span>.</li>
+
+<li class='fragment'>For <strong style='color:#7abbe6'>clear water conditions</strong> the sediment transport in the contracted section is <span class='atb'>near zero</span> and equilibrium depth is reached when the bead shear stress equals the <span class='atb'>critical bed shear stress</span>.</li>
+
+</ul>
+
+</section>
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<h2>Live bed equation</h2>
+<div class='textBox' style='margin-top: 0px;margin-left: 0px;'>
+A modified version of Laursen (1960) equation is recommended by HEC-18 to calculate the <strong style='color:#7abbe6'>contraction</strong> scour depth in live bed conditions.
+</div>
+
+<div class='container'>
+<div class='col'>
+<div class='equationBox'>
+$$ \cfrac{y_2}{y_1}= \left(\cfrac{Q_2}{Q_1}\right)^{6/7} \left(\cfrac{W_1}{W_2} \right)^{K_1} $$
+</div>
+<p> \(y_s=y_2-y_0\) <br>
+	\(y_s= S_{max}\) from general model <br>
+</p>
+</div>
+<div class='col'>
+<p style="font-size: 30px;"> 
+\(y_0=\) Original water depth at contracted section <br>
+\(y_1=\) Water depth at upstream section <br>
+\(y_2=\) Water depth at contracted section <br>
+\(Q_1=\) Discharge at upstream section <br>
+\(Q_2=\) Discharge at contracted section <br>
+\(W_1=\) Width of upstream section <br>
+\(W_2=\) Width of contracted section <br>
+\(K_1=\) Coefficient that depends on the bed transport mode.
+</p>
+</div>
+
+</div>
+
+
+</section>
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<h2>Notes on how to use the equation</h2>
+<ul>
+	<li class='fragment'> This equations are <strong style='color:#7abbe6'>only recommended for coarse sediments </strong> (sand and gravel).</li>
+	<li class='fragment'>For <strong style='color:#7abbe6'>Sand channels</strong> where scour holes might fill again on the falling stage \(y_0\) can be approximated as \(y_1\)</li>
+	<li class='fragment'>\(Q_1\) is the flow in the upstream channel that <strong style='color:#7abbe6'>transport sediments</strong>. It <strong style='color:#7abbe6'>does not account</strong> for the portion of flow in the overbank under <strong style='color:#7abbe6'>clear water conditions</strong>. </li>
+	<li class='fragment'>\(Q_2\) is the <strong style='color:#7abbe6'>total</strong> flow in the contracted section. Thus, \(Q_2 \geq Q_1\)</li>
+	<li class='fragment'>\(W_1\) bottom width of the upstream channel <strong style='color:#7abbe6'>transporting sediments</strong>. Do not consider the overbank width if it is in <strong style='color:#7abbe6'>clear water conditions</strong>.</li>	
+
+</ul>
+
+
+</section>
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+	<h2>Notes on how to use the equation</h2>
+	<ul>
+		<li class='fragment'>\(W_2\) is the bottom width of the contracted channel <strong style='color:#7abbe6'>minus the piers width</strong>.</li>
+		<li class='fragment'>For case 1c, contraction scour of the overbank is computed separately of main channel.</li>	
+	</ul>
+
+	<p>\(K_1\) is obtained from the table below</p>
+	<table style="background-color: antiquewhite;">
+		<thead>
+		  <tr>
+			<th>\(u_*/w_f\)</th>
+			<th>\(K_1\)</th>
+			<th>Mode of bed material transport</th>
+		  </tr>
+		</thead>
+		<tbody>
+		  <tr>
+			<td>&lt;0.5</td>
+			<td>0.59</td>
+			<td>Mostly contact bed material discharge</td>
+		  </tr>
+		  <tr>
+			<td>0.5 to 2.0</td>
+			<td>0.64</td>
+			<td>Some suspended bed material discharge</td>
+		  </tr>
+		  <tr>
+			<td>&gt;2.0</td>
+			<td>0.69</td>
+			<td>Mostly suspended  bed material   discharge</td>
+		  </tr>
+		</tbody>
+		</table>
+	
+	</section>
+
+	<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+	<p>\(w_f=\) particle settle velocity obtained from the figure below</p>
+	<figure>
+	<img src='FiguresGeneral/vel_settle.PNG' width='65%'/>
+	<footer style='margin-top: -30px;font-size: 0.8em;'> <em>From HEC-18</em> </footer>
+	</figure>
+	
+	</section>
+
+	<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+	<h2>Clear water equation</h2>
+	<div class='textBox' style='margin-top: 0px;margin-left: 0px;'>
+	The equation is based in a development suggested by Laursen (1963). The equation is:
+	</div>
+	<div class='container'>
+	<div class='col'>
+	<div class='equationBox'>
+	$$ y_2=\left( \cfrac{K_u Q^2}{D_m^{2/3}W^2}\right)^{3/7} $$
+	</div>
+	<p>\(K_u\)=0.007 for English units, <br>
+	or 0.025 for SI units <br>
+	\(D_m= 1.25 d_{50}\) </p>
+	</div>
+	<div class='col'>
+	<p>\(Q=\) Discharge trough the bridge of on the overbank area bridge associated with width \(W\) <br>
+	\(D_m=\) smallest non-transportable particle</p>
+	<p>\(W=\) bottom width of contracted section minus piers width</p>
+
+	</div>
+	</div>
+	</section>
+
+	<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+	<h2>Notes on the use of the equation</h2>
+	<ul>
+		<li class='fragment'>You can use the top instead of \(W\) as long as you are <strong style='color:#7abbe6'>consistent</strong> trough the calculations.</li>
+		<li class='fragment'> A <strong style='color:#7abbe6'>reasonable</strong> lower limit of \(D_{50}=0.2\) mm is applied.</li>
+		<li class='fragment'>Using \(D_{50}<0.2 \) mm will <strong style='color:#7abbe6'>overstimate</strong> clear water scour.</li>
+	</ul>
+	</section>
+
+	<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+	<h1>Example 5.1</h1>
+
+	<div class='textBox' style='margin-top: 0px;margin-left: 0px;'>
+	Given: <br>
+	<ul>
+		<li>Upstream channel: \(W=98.2\) m <br>
+		\(y_1=2.62\) m <br>
+		\(Q_1=773 \mathrm{m^3/s}\) <br>
+		\(S=0.004\)</li>
+		<li>Bridge: \(W_2=37.2\) m <br>
+		\(y_0= 2.16\) m</li>
+		<li>Bed material: \(d_{50}=0.31\) mm</li>
+	</ul> <br>
+	Determine the contraction scour depth for the bridge.
+	</div>
+	
+	</section>
 
 
 
