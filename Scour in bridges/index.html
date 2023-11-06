@@ -639,23 +639,228 @@ $$ \cfrac{y_2}{y_1}= \left(\cfrac{Q_2}{Q_1}\right)^{6/7} \left(\cfrac{W_1}{W_2} 
 	</section>
 
 	<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+
 	<h1>Local scour around piers</h1>
+
 	<div class='textBox' style='margin-top: 0px;font-size: 1em;'> Flow around piers generates <span class='atb'> horseshoe </span> and <span class='atb'> wake </span> vortices. The flow field, however, can be affected by shape relative to the water depth.</div>
 
 	<div class='container'>
 	<div class='col'>
-	<div class='defBox' name='Narrow pier:' style='margin-top: 0px;font-size: 1em;'> Is a pier with width \(a\) small in comparisson to the water depth \(y\). It fulfills the criterion \( a/y< 1 \)</div>
+
+	<div class='defBox' name='Narrow pier:' style='margin-top: 10px;font-size: 1em;'> Is a pier with width \(a\) small in comparison to the water depth \(y\). It fulfills the criterion \( y/a > 1.4 \) 
 	</div>
-	<div class='col'>
+
+	<div class='textBox' style='margin-top: 5px;font-size: 1em'> Same turbulent structures as discussed before.</div>
+
+	</div>
+
+		<div class='col'>
 	
-	</div>
+		<img src="FiguresGeneral/narrow_pier.PNG" width="80%""/>
+		<figcaption style="font-size: xx-large; margin-top: -30px;"> From HEC-18 </figcaption>	
+		</div>
 	</div>
 	</section>
 
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<div class='textBox' style='margin-top: 0px;font-size: 1em;'> Increasing the 	<strong style='color:#7abbe6'>width</strong> of the pier compared to the water depth affects <span class='atb'> flow field </span></div>
+
+<div class='container'>
+<div class='col'>
+<div class='defBox' name='Transitional piers' style='margin-top: 5px;font-size: 1em;'> These are piers with \( 0.2 \leq y/a \leq 1.4 \). </div>
+
+<img src="FiguresGeneral/transition_pier.PNG" width="80%""/>
+		<figcaption style="font-size: xx-large; margin-top: -80px;"> From HEC-18 </figcaption>	
+
+</div>
+<div class='col'>
+<div class='defBox' name='Wide piers' style='margin-top: 0.5px;font-size: 1em;margin-left: 5px;'>  These are piers with \(y/a < 0.2 \)</div>
+
+<img src="FiguresGeneral/wide_pier.PNG" width="90%""/>
+		<figcaption style="font-size: xx-large; margin-top: -30px;"> From HEC-18 </figcaption>	
+</div>
+
+</div>
+</section>
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<h1>Pier scour equations </h1>
+<div class='textBox' style='margin-top: 0px;font-size: 1em;'> Various model studies have been used for a wide variety of pier configurations. As a result of the many laboratory studies, 	<strong style='color:#7abbe6'>there are numerous pier scour equations</strong>.</div>
+
+<div class='container'>
+<div class='col'>
+	<img src="FiguresGeneral/comparison of scour predictions.PNG" width="80%""/>
+	<figcaption style="font-size: xx-large; margin-top: -30px;"> From HEC-18 </figcaption>	
+</div>
+<div class='col'>
+<div class='container'>
+<div class='col'>
+<p>In the figure \(y_s/a\) is the normalized scour depth.</p>
+</div>
+<div class='col'>
+	<div class='stickynote' style='margin-top: 10px;margin-left: 75px;'>
+		A comparison of various predicting equations found that an equations proposed by Colorado State University (CSU) enveloped all data. <br>
+		This means the equation is 	<strong style='color:#7abbe6'>conservative</strong>.
+	</div>
+
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<h1>HEC-18 equation (CSU) </h1> 
+<div class='textBox' style='margin-top: 0px;font-size: 1em;'> The HEC-18 equation is: <br>
+<div class='equationBox'> \(\cfrac{y_s}{a}= 2 K_1 K_2 K_3 \left(\cfrac{y_1}{a}\right)^{0.35} F_{r1}^{0.43} \)</div></div>
+
+<div class='container'>
+<div class='col'>
+<img src="FiguresGeneral/definition_sketch.PNG" width="100%"">
+<figcaption style="font: xx-large;margin-top: -30px;">Definition sketch from HEC-18 </figcaption>
+</div>
+<div class='col'>
+	<p>\(K_1=\) Factor for pier nose shape <br>
+	\(K_2=\) Angle of attack factor <br>
+	\(K_3=\) Correction factor for bed conditions <br>
+\(F_{r1}=\) Upstream section's Froude number <br>
+\(F_{r1}= U_1/\sqrt{gy_1}\)</p>
+</div>
+</div>
+</section>
 
 
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<h1>Shape factor \(K_1\)</h1>
+<div class='textBox' style='margin-top: 0px;font-size: 1em;'> The shape factor \(K_1\) is a function of the <span class='atb'>pier nose shape</span>. It is obtained from the figure and table below.</div>
+<div class='container'>
+<div class='col'>
+<img src="FiguresGeneral/shape_factor.PNG" width="100%"">
+</div>
+<div class='col'>
+	<table style="background-color: antiquewhite ;">
+		<thead>
+		  <tr>
+			<th>Shape of pier nose</th>
+			<th> \(K_1\) <br></th>
+		  </tr>
+		</thead>
+		<tbody>
+		  <tr>
+			<td>(a) Square nose<br></td>
+			<td>1.1<br></td>
+		  </tr>
+		  <tr>
+			<td>(b) Round nose<br></td>
+			<td>1.0<br></td>
+		  </tr>
+		  <tr>
+			<td>(c) Circular cylinder<br></td>
+			<td>1.0</td>
+		  </tr>
+		  <tr>
+			<td>(e) Group of cylinders</td>
+			<td>1.0</td>
+		  </tr>
+		  <tr>
+			<td>(d) Sharp nose</td>
+			<td>0.9</td>
+		  </tr>
+		</tbody>
+		</table>
+</div>
+</div>
+
+</section>
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<h1>Angle of attack \(K_2\)</h1>
+
+<div class='container'>
+<div class='col'>
+<img src="https://ars.els-cdn.com/content/image/1-s2.0-S1018363918309474-gr1.jpg" width="100%">
+<figcaption style="font: xx-large; margin-top: -30px;">Fom Thamer et al. (2007) </figcaption>
+</div>
+<div class='col'>
+<p> The equation to calculate \(F_2\) is: <br>
+<div class='equationBox'> \(K_2= \left(\cfrac{L}{a} \sin \theta + \cos \theta \right)\) </div></p>
+
+<div class='textBox' style='margin-top: 0px;font-size: 1em;'> <strong style='color:#7abbe6'>Note:</strong> if \(L/a > 12\) use \(L/a=12\)</div>
+</div>
+</div>
+</section>
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<h1>Bed conditions \(K_3\)</h1>
+<div class='textBox' style='margin-top: 0px;font-size: 1em;'> Bed conditions are evaluated according if the bed is in <span class='atb'> clear-water </span> or <span class='atb'> live-bed </span>.The morphology of the bed plays a role. </div>
+
+<table style="background-color: antiquewhite;">
+	<thead>
+	  <tr>
+		<th>Bed conditions</th>
+		<th>Dune height (ft)<br></th>
+		<th>\(K_3\)</th>
+	  </tr>
+	</thead>
+	<tbody>
+	  <tr>
+		<td>Clear-water scour<br></td>
+		<td>N/A<br></td>
+		<td>1.1</td>
+	  </tr>
+	  <tr>
+		<td>Plane bed and antidune flow<br></td>
+		<td>N/A</td>
+		<td>1.1</td>
+	  </tr>
+	  <tr>
+		<td>Small dunes<br></td>
+		<td>\(2 \leq H < 10\)</td>
+		<td>1.1</td>
+	  </tr>
+	  <tr>
+		<td>Medium dunes<br></td>
+		<td>\(10 \leq H < 30\)</td>
+		<td>1.2 to 1.1</td>
+	  </tr>
+	  <tr>
+		<td>Large dunes<br></td>
+		<td>\(H \geq 30\)</td>
+		<td>1.3</td>
+	  </tr>
+	</tbody>
+	</table>
+</section>
 
 
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+	<iframe class="stretch" src="https://www.youtube.com/embed/8pY7r-typ1w?si=rfBEzQhpkrPRR-tv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</section>
+
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<h1>HEC-18 equation notes</h1>
+<ol>
+	<li class='fragment'>\(K_1\) should be determine using table 7.1 from HEC-18 for \(\theta \leq 5^{o}\). Otherwise, 	<strong style='color:#7abbe6'>\(K_2\) dominates</strong> and \(K_1=1\)</li>
+
+	<li class='fragment'>Use of \(K_2\) is limited to the pier length being 	<strong style='color:#7abbe6'>fully subjected to the flow field</strong>. Use of \(K_2\) 	<strong style='color:#7abbe6'>will over predict the scour depth when:</strong> a) a portion of the pier is 	<strong style='color:#7abbe6'>shielded</strong>; or 2) an abutment or another structure redirects the flow 	<strong style='color:#7abbe6'>parallel to the pier</strong>.</li>
+
+	<li class='fragment'>\(K_3\) comes from evidence that maximum scour depth is 	<strong style='color:#7abbe6'>10% larger</strong> for in clear-water and the presence of dunes. In the 	<strong style='color:#7abbe6'>unusual case</strong> of large dunes, the maximum scour depth is 20%-30% larger. </li>
+</ol>
+</section>
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<h1>Example 5.2</h1>
+
+<div class='textBox' style='margin-top: 0px;font-size: 1em;'> Given: <br>
+Pier geometry: \(a=4\) ft, \(L=59\) ft, round nose <br>
+Flow variables: \(y_1= 10.2\) ft, \(U_1=11.02\) ft/s <br>
+Angle of attack: 0 degrees <br>
+Bed material: \(d_{50}=7.3\) mm, \(d_{95}=0.32\) mm <br>
+Bed configuration: Plane bed <br>
+Determine: <br>
+The magnitude of the pier scour</div>
+</section>
 
 
 
