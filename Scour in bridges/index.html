@@ -862,7 +862,182 @@ Determine: <br>
 The magnitude of the pier scour</div>
 </section>
 
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<h1>Pier scour at wide piers</h1>
+<div class='textBox' style='margin-top: 0px;font-size: 1em;'> Flume experiments on scour depths at wide piers in shallow flows and field observations indicate the CSU 	<strong style='color:#7abbe6'>over estimates the scour depths</strong>. To correct this, use a correction factor \(K_w\). <br>
+For \(U/U_c< 1\) use: <br>
+<div class='equationBox'> \(K_w= 2.58 (y/a)^{0.34} F_{r1}^{0.65} \)</div> <br>
+For \(U/U_c\geq 1\) use: <br>
+<div class='equationBox'> \(K_w= (y/a)^{0.13} F_{r1}^{0.25}  \)</div> <br>
 
+</div>
+
+<p>	<strong style='color:#7abbe6'>Note:</strong> This factor should be applied when \(y/a< 0.8\); \(a/d_{50}>50\); and \(F_{r1}< 1\)</p>
+</section>
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<h1>Scour for complex foundations</h1>
+<div class='textBox' style='margin-top: 0px;font-size: 1em;'> Research to develop the HEC-18 equation was done with 	<strong style='color:#7abbe6'>solid piers</strong> with little attention to (1) <span class='atb'> pile groups</span>, (2) <span class='atb'> pile groups + caps</span>, or (3) <span class='atb'> pile groups + cap + solid piers </span>. In this case the HEC-18 manual recommends using the 	<strong style='color:#7abbe6'>superposition of scour components</strong>. However, there is no evidence showing that principle exists.</div>
+
+<img src="FiguresGeneral/superposition.PNG" width="65%"">
+</section>
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<h1>Superposition principle steps</h1>
+<ol>
+	<li class='fragment'>Scour should be designed for 	<strong style='color:#7abbe6'>design flood or smaller discharge</strong> if this causes larger scour depths.</li>
+	<li class='fragment'>Analyze the configuration of the foundation and determine the components of the pier that are exposed to the flow.</li>
+	<li class='fragment'>Determine the scour depths for each components and 	<strong style='color:#7abbe6'>add then</strong>.</li>
+	<li class='fragment'>Plot the scour depths and analyze the results using 	<strong style='color:#7abbe6'>an interdisciplinary group</strong>.</li>
+	<li class='fragment'>	<strong style='color:#7abbe6'>Conduct a physical model study</strong> to increase bridge safety or reduce costs.</li>
+</ol>
+
+</section>
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<h1>Pier stem scour</h1>
+<div class='textBox' style='margin-top: 0px;font-size: 1em;'> The pier stem scour is calculated based on a modified version of the HEC-18 equation: <br>
+<div class='equationBox'> \(\cfrac{y_{spier}}{y_1}= K_{hpier}\left[2 K_1 K_2K_3 \left(\cfrac{a_{pier}}{y_1}\right)^{0.65}  F_{r1}^{0.43} \right]\) </div>
+</div>
+
+<p>\(K_{hpier}=\) correction factor to account the height of pier stem above the bed. <br>
+	<strong style='color:#7abbe6'>Note:</strong> The term in brackets in the equation is the same for the basic HEC-18 equation.</p>
+</section>
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<img src="FiguresGeneral/pier_stem.PNG" width="80%"">
+<figcaption style="margin-top: -30px; font-size: xx-large;">Taken from the HEC-18 manual.</figcaption>
+</section>
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<h1>Pile cap scour</h1>
+<div class='textBox' style='margin-top: 0px;font-size: 1em;'> There are two cases for pile cap scour:
+	<ol>
+		<li>The bottom of the cap is <span class='atb'> above the bed </span> by design or by scour.</li>
+		<li>The bottom if the cap is <span class='atb'> on or below the bed.  </span></li>
+	</ol>
+</div>
+
+<div class='container'>
+<div class='col'>
+<h4>Case 1</h4>
+<p>The strategy is to determine an equivalent pier width and calculate the scour depth using a modified HEC-18 equation</p>
+</div>
+<div class='col'>
+<h4>Case 2</h4>
+<p>The strategy is to treat the pile ap or exposed footing like a short pier in a shallow steam of depth equal to the height to the top of the footing above the bed.</p>
+</div>
+</div>
+
+</section>
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<h1>Case 1: Pile cap scour</h1>
+<div class='textBox' style='margin-top: 0px;font-size: 1em;'> The modified equation is: <br>
+<div class='equationBox'> \(\cfrac{y_{spc}}{y_2}= 2 K_1 K_2 K_3 K_w \left(\cfrac{a^*_{pc}}{y_2}\right)^{0.65}  F_{r2}^{0.43} \)  </div></div>
+
+<p>\(a^*_{pc}=\) Modified pier width. Use fig. 7.7 from HEC-18 manual. <br>
+\(T=\) Thickness of the pile cap exposed to the flow. <br>
+\(h_2=h_0+ 0.5 y_{spier}\) <br>
+\(y_2= y_1+ 0.5 y_{spier}\) Adjusted fow depth <br>
+\(U_2=U_1y_1/y_2\) Adjusted flow velocity</p>
+</section>
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<img src="FiguresGeneral/pier_width_factor.PNG" width="75%"">
+<figcaption style="margin-top: -30px; font-size: xx-large;"> Fig. 7.7 from HEC-18 manual.</figcaption>
+</section>
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<h1>Case 2: Pile cap scour</h1>
+<div class='textBox' style='margin-top: 0px;font-size: 1em;'> The modified equation is:
+	<div class='equationBox'> \(\cfrac{y_{spc}}{y_2}= 2 K_1 K_2 K_3 K_w \left(\cfrac{a_{pc}}{y_f}\right)^{0.65}  F_{rf}^{0.43} \)  </div>
+</div>
+
+<div class='container'>
+<div class='col'>
+<p>Subscript \((\cdot)_f\) refers to the flow zone below the top of the width. <br> 
+\(y_f=\) considers degradation, contraction, and pier stem scour.</p>
+</div>
+<div class='col'>
+<img src="FiguresGeneral/footing_width.PNG" width="100%">
+</div>
+</div>
+</section>
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<div class='textBox' style='margin-top: 0px;font-size: 1em;'> calculate the velocity using a logarithmic velocity profile:
+
+<div class='equationBox'> \(\cfrac{U_f}{U_2} = \cfrac{\ln(10.93 y_f/k_s + 1)}{\ln(10.93 y_2/k_s +1)} \) </div></div>
+
+<p>\(k_s\) is a roughness term that should be equal to \(d_{84}\) for 	<strong style='color:#7abbe6'>sands</strong> and \(3.5 d_{84}\) for 	<strong style='color:#7abbe6'>gravel</strong> </p>
+
+<p>	<strong style='color:#7abbe6'>Note:</strong> Because for case two, the assumption is that the pier bottom will remain <span class='atb'> buried </span>, we do not need to calculate the scour in the pier groups. therefore: <br>
+<div class='equationBox'> \(y_s=y_{spier} + y_{spc}\) </div></p>
+</section>
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<h1>Pile group scour</h1>
+
+<div class='textBox' style='margin-top: 0px;font-size: 1em;'> The scour depth for pile groups is calculated as a function of the <span class='atb'> spacing </span>, number of <span class='atb'> pile rows </span>, and <span class='atb'> pile length </span> exposed into the flow. </div>
+<p>The strategy consists of the following steps:
+	<ol>
+		<li class='fragment'>Project the width of of the piles onto a plane normal to the flow direction.</li>
+		<li class='fragment'>Determine the width of an equivalent pier that would produce same scour depth as if pile group penetrates water surface.</li>
+		<li class='fragment'>Adjust flow depth, velocity, and exposed height of the pile group.</li>
+		<li class='fragment'>Determine group height based on exposed heigh of pile group.</li>
+		<li class='fragment'>Compute scour using modified version of HEC-18.</li>
+	</ol>
+</p>
+</section>
+
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+	<h1>Project width of piles</h1>
+	<div class='container'>
+	<div class='col'>
+	<h4>Piles aligned with flow</h4>
+	<div class='textBox' style='margin-top: 0px;font-size: 0.9em;'> In this case the projected width \(a_{proj}\) is the width of the 	<strong style='color:#7abbe6'>collapsed group</strong></div>
+	<img src="FiguresGeneral/group_normal.PNG" width="40%"">
+	
+	
+	
+	</div>
+	<div class='col'>
+		<h4>Skewed piles</h4>
+		<div class='textBox' style='margin-top: 0px;font-size: 0.9em;'> The projected width \(a_{proj}\) is calculated as the 	<strong style='color:#7abbe6'>sum of the non-overlapping projected widths</strong> times a spacing factor \(K_{sp}\).</div>
+		<img src="FiguresGeneral/group_skewed.PNG" width="50%"">
+		
+	</div>
+	</div>
+	</section>
+
+	<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+	<img src="FiguresGeneral/projection_factor.PNG" width="75%">
+	</section>
+
+	<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+	<h1>Equivalent width of pile group</h1>
+	<div class='textBox' style='margin-top: 0px;font-size: 1em;'> The equivalent pile group is then calculated using: <br>
+	<p> <div class='equationBox'> \(a^*_{pg}= a_{proj} K_{sp} K_m\) </div>   </p>	
+		
+	</div>
+
+	<div class='container'>
+	<div class='col'>
+		<p>\(K_m=\) number of rows factor </p>
+	</div>
+	<div class='col'>
+		<img src="FiguresGeneral/row_factor.PNG" width="90%""">
+	</div>
+	</div>	
+	</section>
+
+	<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+	<div class='textBox' style='margin-top: 0px;font-size: 1em;'> The modified scour equation is: <br>
+		<div class='equationBox'> \(\cfrac{y_{spg}}{y_3}= K_{hpg} \left[2 K_1 K_3 \left(\cfrac{a^*_{pg}}{y_3} \right)^{0.65}  F_{r3}^0.43 \right] \) </div> </div>
+		
+	</section>
 
 
 
