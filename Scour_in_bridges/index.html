@@ -1173,7 +1173,8 @@ There are three general shapes considered: <br>
 </figure>
 </div>
 <div class='col'>
-	<table style="background-color: antiquewhite;margin-top: 10px;">
+	<p style="margin-top: -10px">Table 8.1</p>
+	<table style="background-color: antiquewhite;margin-top: -10px;">
 		<thead>
 		  <tr>
 			<th>Description</th>
@@ -1200,6 +1201,264 @@ There are three general shapes considered: <br>
 </section>
 
 
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<h1>Froehlich's scour equation</h1>
+
+<div class='textBox' style='margin-top: 0px;margin-left: 0px;'>
+Froehlich analyzed 170 <strong style='color:#7abbe6'>live-bed</strong> scour in flume experiments and obtained the following equation by regression: <br>
+<div class='equationBox'>
+\(\cfrac{y_s}{y_a}=2.27 K_1 K_2 \left(\cfrac{L'}{y_a}\right)^{0.43} F_r^{0.61}+1\)
+</div>
+</div>
+<p>
+	\(y_a=\) flow depth in the flood plain <br>
+	\(L'=\) Effective length of active flow obstructed by embankment<br>
+	\(F_{re}=\) Abutment's upstream Froude number<br>
+	\(K_1=\) shape factor (Table 8.1) <br>
+	\(K_2=\) skew angle factor <br>
+	</p>
+</section>
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<div class='container'>
+<div class='col'>
+<div class='textBox' style='margin-top: 0px;margin-left: 0px;'>
+Calculate \(K_2\) using the following equation: <br>
+<div class='equationBox'>
+\(K_2= (\theta / 90)^{0.13}\)
+</div>
+<p> \(\theta< 90^o\) if embankment points downstream <br>
+\(\theta> 90^o\) if embankment points downstream</p>
+</div>
+</div>
+<div class='col'>
+<div class='textBox' style='margin-top: 0px;margin-left: 5px;'>
+Calculate \(F_{re}\) using the following equation: <br>
+<div class='equationBox'>
+\(F_{re}= U_e/\sqrt{g y_a}\)
+</div>
+<p>\(U_e=Q_e/A_e\) and \(Q_e=\) flow obstructed by te embankment. <br>
+\(y_a= A_e/L\) average depth of fow on the floodplain </p>
+</div>
+</div>
+</div>
+
+<p><strong style='color:#7abbe6'>Note:</strong> Froehlich's equation is not consistent with the fact that when \(L' \longrightarrow 0 \implies y_s \longrightarrow 0\). <br>
+The "\(+1\)" in the equation was added so that it <strong style='color:#7abbe6'>envelops 98% of data</strong> </p>
+
+</section>
+
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<h1>The HIRE equation</h1>
+<div class='textBox' style='margin-top: 0px;margin-left: 0px;'>
+An equation based on <strong style='color:#7abbe6'>field data</strong> at the end of spurs in the Mississippi River (obtained by the USACE) is proposed to estimate scour in abutments:<br>
+
+<div class='equationBox'>
+\(\cfrac{y_s}{y_1}= 4 F_r^{0.33} \cfrac{K_1 K_2}{0.55}\)
+</div>
+
+
+
+</div>
+
+<p> \(K_1=\) shape factor (Table 8.1) <br>
+	\(K_2=\) skew angle factor (Same as for Froehlich's equation) <br>
+	\(F_r=\) Froude number based on the velocity and depth adjacent to and upstream of the abutment <br>
+<strong style='color:#7abbe6'>Note:</strong> Use this equation if projected \(L\) to \(y_1\) is greater than 25</p>
+</section>
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<h1>Example 5.4</h1>
+<div class='textBox' style='margin-top: 0px;margin-left: 0px;'>
+	Determine abutment scour depth for the following conditions. The right approach embankment and abutment project 80 ft onto the floodplain at an angle of \(70^o\) measured from the downstream floodplain edge. The left approach embankment and abutment project onto the floodplain 790 ft. The bridge abutment structures are vertical wall with wingwalls.
+</div>
+<div class='container'>
+<div class='col'>
+	<figure>
+		<img src='FiguresGeneral/abutment_example.PNG' width='50%'/>
+		<footer style='margin-top: px;font-size: 0.8em;'> <em></em> </footer>
+	</figure>
+</div>
+<div class='col'>
+<div class='textBox' style='margin-top: 0px;margin-left: 0px;'>
+	Data for right abutment: <br>
+\(U_e=960 \mathrm{ft}^3/\mathrm{s}\) <br>
+\(y_a=3.5\) ft
+</div>
+</div>
+</div>
+
+</section>
+
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<h1>Example 5.5</h1>
+<div class='textBox' style='margin-top: 0px;margin-left: 0px;'>
+Determine the scour depth at the left abutment for the same figure shown in Example 5.4. The flow depth at abutment tip is 6.2 ft and the velocity at the tip of the abutment is \(U_1=9.9\) ft from HEC-RAS stream tube.
+</div>
+
+</section>
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<h1>NCHRP 24-20 Approach</h1>
+
+<div class='textBox' style='margin-top: 0px;margin-left: 0px;'>
+The <strong style='color:#7abbe6'>National Cooperative Highway Research Program (NCHRP)</strong> developed abutment scour equations considering various variables including: i) abutment type, ii) locations, and iii) sediment transport conditions. <br>
+These equations use <span class='atb'>contraction scour</span> as a base, and apply a <span class='atb'>correction factor</span> to account for large-scale turbulence in the vicinity of the abutment. <br>
+</div>
+
+</section>
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<div class='textBox' style='margin-top: 0px;margin-left: 0px;'>
+There are three types of abutments considered: <br>
+<ol type="a">
+	<li> Scour near the <span class='atb'>main channel</span></li>
+	<li> Scour for <span class='atb'>set back</span> abutments</li>
+	<li> Embankment <span class='atb'>breaches</span>, and abutment acts as pier</li>
+</ol>
+
+</div>
+
+<div class='container'>
+<div class='col'>
+<figure>
+<img src='FiguresGeneral/abutment_casea.PNG' width='100%'/>
+<footer style='margin-top: px;font-size: 0.8em;'> <span class='atb'>Case a</span> </footer>
+</figure>
+</div>
+<div class='col'>
+	<figure>
+		<img src='FiguresGeneral/abutment_caseb.PNG' width='100%'/>
+		<footer style='margin-top: px;font-size: 0.8em;'> <span class='atb'>Case b</span> </footer>
+	</figure>
+</div>
+<div class='col'>
+	<figure>
+		<img src='FiguresGeneral/abutment_casec.PNG' width='100%'/>
+		<footer style='margin-top: px;font-size: 0.8em;'> <span class='atb'>Case c</span> </footer>
+	</figure>
+</div>
+</div>
+
+</section>
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<div class='textBox' style='margin-top: 0px;margin-left: 0px;'>
+The NCHRP 24-20 equations are: <br>
+<div class='equationBox'>
+\(y_{max}= \alpha y_c\)
+</div>
+
+
+</div>	
+
+<p> \(y_c=\) Flow depth including contraction scour <br>
+	\(\alpha=\) correction factor for <span class='atb'>live-bed</span> or <span class='atb'>clear-water</span> conditions <br>
+\(y_s= y_{max}-y_0\) </p>
+
+
+
+</section>
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<figure>
+<img src='FiguresGeneral/NCHRP_def.PNG' width='100%'/>
+<footer style='margin-top: px;font-size: 0.8em;'> <em>Taken from HEC-18</em> </footer>
+</figure>
+
+</section>
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<h1>Live-bed factor</h1>
+<div class='container'>
+<div class='col'>
+<figure>
+<img src='FiguresGeneral/live_bed_alpha_1.PNG' width='70%'/>
+<footer style='margin-top: -30px;font-size: 0.8em;'> <em>Use for Spill-through abutments</em> </footer>
+</figure>
+</div>
+<div class='col'>
+	<figure>
+		<img src='FiguresGeneral/live_bed_alpha2.PNG' width='70%'/>
+		<footer style='margin-top: -30px;font-size: 0.8em;'> <em>Use for wingwall abutments</em> </footer>
+		</figure>
+</div>
+</div>
+</section>
+
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+	<h1>Clear water factor</h1>
+	<div class='container'>
+	<div class='col'>
+	<figure>
+	<img src='FiguresGeneral/clear_water_alpha1.PNG' width='70%'/>
+	<footer style='margin-top: -30px;font-size: 0.8em;'> <em>Use for Spill-through abutments</em> </footer>
+	</figure>
+	</div>
+	<div class='col'>
+		<figure>
+			<img src='FiguresGeneral/clear_water_alpha2.PNG' width='70%'/>
+			<footer style='margin-top: -30px;font-size: 0.8em;'> <em>Use for wingwall abutments</em> </footer>
+			</figure>
+	</div>
+	</div>
+	</section>
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<div>
+
+	<div class='container'>
+		<div class='col'>
+			<div class='textBox' style='margin-top: 50px;margin-left: 0px;'>
+				Calculate the contraction scour using for <strong style='color:#7abbe6'>live-bed</strong> using: <br>
+				<div class='equationBox'>
+				\(y_c=y_1 \left(\cfrac{q_{2c}}{q_1} \right)^{6/7}\)
+				</div>
+				
+				</div>
+		
+		</div>
+		<div class='col'>
+			<div class='textBox' style='margin-top: 0px;margin-left: 5px;'>
+				And for <strong style='color:#7abbe6'>clear-water</strong> use: <br>
+				<div class='equationBox'>
+				\(y_c=\left(\cfrac{q_{2f}}{K_{u1} d_{50}^{1/3}}\right)^{6/7}\) or \(y_c= \left(\cfrac{\gamma_w}{\tau_c} \right) \left(\cfrac{n q_{2f}}{K_{u2} }\right)^{6/7}\)
+				</div>
+				</div>
+		
+		</div>
+</div>
+
+
+
+<div>
+<div class='container'>
+<div class='col'>
+	<p style="margin-top: -15px;"> \(y_1=\) Upstream flow depth <br>
+		\(q_1=\) Upstream unit discharge <br>
+		\(q_{2c}=\) Unit discharge in the constricted opening accounting for non-uniform flow distribution <br>
+	
+	</p>
+</div>
+<div class='col'>
+	<p style="margin-top: -15px;"> \(n=\) Manning coefficient in the floodplain <br>
+		\(K_{u1}= \)11.17 for Eng, and 6.19 for SI <br>
+		\(K_{u2}= \)1.486 for Eng, and 1.0 for SI <br>
+		\(\tau_c=\) Critical shear stress for the floodplain material</p>
+</div>
+</div>
+
+</div>
+</div>
+
+	
+
+
+
+</section>
 
 
 
