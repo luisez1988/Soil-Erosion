@@ -1346,6 +1346,14 @@ There are three types of abutments considered: <br>
 
 <section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
 <div class='textBox' style='margin-top: 0px;margin-left: 0px;'>
+If the length of the embankment is larger than 75% of the floodplain width, the abutment will be scoured as in case a under <span class='atb'>live-bed conditions</span>.
+</div>
+
+<p>If the projected length of the embankment is less than 75% of the floodplain width, scour condition b occurs and contraction scour should be performed for <span class='atb'>clear-water conditions</span>.</p>
+</section>
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<div class='textBox' style='margin-top: 0px;margin-left: 0px;'>
 The NCHRP 24-20 equations are: <br>
 <div class='equationBox'>
 \(y_{max}= \alpha y_c\)
@@ -1460,6 +1468,157 @@ The NCHRP 24-20 equations are: <br>
 
 </section>
 
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<h1>Steps to use the NCHRP method</h1>
+<div class='defBox' name='Set-back ratio (SBR)' style='margin-top: 0px;margin-left: 0px;'>
+Is defined as the ratio of the set-back length \(S_L\) to the flow to the average flow depth in the channel.
+<div class='equationBox'>
+\(SBR=S_L/\bar{y}\)
+</div> 
+</div>
+<div class='container'>
+<div class='col'>
+<figure>
+<img src='FiguresGeneral/SBR_less_5.PNG' width='50%'/>
+<footer style='margin-top: -30px;font-size: 0.8em;'> <em>Fig. 8.14 in HEC-18 manual</em> </footer>
+</figure>
+</div>
+<div class='col'>
+<p>If <strong style='color:#7abbe6'>\(SBR<5\)</strong>, as in the figure, in <strong style='color:#7abbe6'>both abutments</strong> compute: <br>
+\(U=Q/A\) <br>
+with \(A\) being the total area in the contracted section and \(Q\) the total discharge. <br>
+Then compute: <br>
+\(q=U y\)
+</p>
+</div>
+</div>
+
+</section>
+
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<div class='container'>
+<div class='col'>
+If <strong style='color:#7abbe6'>SBR>5</strong> for and abutment, like in the figure, compute: <br>
+\(U=Q/A\) <br>
+with \(A\) being the partial area of the floodplain in the contracted section and \(Q\) the discharge of the floodplain only. <br>
+Then compute: <br>
+\(q=U y_a\) <br>
+where \(y_a\) is the average depth of flow in the floodplain.
+</div>
+<div class='col'>
+<figure>
+<img src='FiguresGeneral/SBR_larger_5.PNG' width='90%'/>
+<footer style='margin-top: -30px;font-size: 0.8em;'> <em>Fig. 8.15 from HEC-18</em> </footer>
+</figure>
+</div>
+</div>
+
+</section>
+
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<div class='container'>
+<div class='col'>
+<figure>
+<img src='FiguresGeneral/SBR_different.PNG' width='90%'/>
+<footer style='margin-top: -30px;font-size: 0.8em;'> <em>Fig. 8.16 from HEC-18</em> </footer>
+</figure>
+</div>
+<div class='col'>
+If <strong style='color:#7abbe6'>\(SBR>5\)</strong> in one abutment and <strong style='color:#7abbe6'>\(SBR<5\)</strong> in the other, compute: <br>
+\(U=Q/A\) <br>
+a) for the abutment with \(SBR<5\) <br>
+\(A=\) area of main channel plus floodplain and \(Q\) is the discharge of main channel plus overbank discharge. <br>
+b) for the abutment with \(SBR>5\) same as in previous case<br>
+Then compute: <br>
+\(q=U y\) <br>
+In the main channel the unit discharge is calculated using the average flow depth in the main channel, and for the floodplain the unit discharge is calculated using the average flow depth in the floodplain.
+</div>
+</div>
+
+</section>
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<h1>Example 5.6</h1>
+<div class='container'>
+<div class='col'>
+<figure>
+<img src='FiguresGeneral/example_56.PNG' width='100%'/>
+<footer style='margin-top: px;font-size: 0.8em;'> <em></em> </footer>
+</figure>
+</div>
+<div class='col'>
+<div class='textBox' style='margin-top: 0px;margin-left: 0px;'>
+For the example in the figure determine the scour depth at the abutments. The upstream channel discharge is 5.3 \(\mathrm{m}^2/\mathrm{s}\), the bridge unit discharge is 7.3 \(\mathrm{m}^2/\mathrm{s}\), the upstream flow depth and bridge flow depth before scour are equal to 3 m. The floodplain discharge in the right abutment is 0.53 \(\mathrm{m}^2/\mathrm{s}\) withh flow depth of 1.1 m. The mean particle size is \(d_{50}=0.3\) mm.  </div>
+</div>
+</div>
+</section>
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<h1>Plotting scour profiles</h1>
+
+<div class='textBox' style='margin-top: 0px;margin-left: 0px;'>
+Scour profiles are plotted together with the bridge cross section to <span class='atb'>visualize</span> scour depths and determine its effects on the bridge's <span class='atb'>foundation and stability</span>
+</div>
+<div class='container'>
+<div class='col'>
+<figure>
+<img src='FiguresGeneral/scour_profile.PNG' width='100%'/>
+<footer style='margin-top: px;font-size: 0.8em;'> <em></em> </footer>
+</figure>
+</div>
+<div class='col'>
+<ul>
+	<li class='fragment'>First <strong style='color:#7abbe6'>offset</strong> the original profile according to <strong style='color:#7abbe6'>contraction</strong> scour calculations.</li>
+	<li class='fragment'>Over the contraction scour, plot <strong style='color:#7abbe6'>local scour profiles</strong>. You will need to estimate the scour hole <strong style='color:#7abbe6'>width</strong>.</li>
+</ul>
+</div>
+</div>
+
+</section>
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<h1>Scour width calculation</h1>
+<div class='textBox' style='margin-top: 0px;margin-left: 0px;'>
+For <strong style='color:#7abbe6'>local scour</strong>, calculate the scour width using the following equation: <br>
+<div class='equationBox'>
+\(W=y_s (K+ \cot \phi_r)\)
+</div> 
+</div>
+
+<div class='container'>
+<div class='col'>
+Where: <br>
+\(y_s=\) scour depth <br>
+\(K=\) bottom width of the hole related to the depth <br>
+\(\phi_r=\) Repose friction angle of the soil
+</div>
+<div class='col'>
+<figure>
+<img src='FiguresGeneral/suggested_width.PNG' width='100%'/>
+<footer style='margin-top: px;font-size: 0.8em;'> <em></em> </footer>
+</figure>
+</div>
+</div>
+</section>
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<h1>Final comments</h1>
+
+<ol>
+<li class='fragment'>Erosion depends on <strong style='color:#7abbe6'>particle size</strong>. <strong style='color:#7abbe6'>Increasing particle size</strong> armors foundations against scour.</li>
+
+<li class='fragment'><strong style='color:#7abbe6'>Shape of pier</strong> affects turbulent structures. A <strong style='color:#7abbe6'>streamlined</strong> foundation can reduce scour depth.</li>
+
+<li class='fragment'><strong style='color:#7abbe6'>Cohesion or cementation</strong> can also <strong style='color:#7abbe6'>help</strong> reducing scour depth.</li>
+
+<li class='fragment'><strong style='color:#7abbe6'>Predictive equations</strong> are highly <strong style='color:#7abbe6'>empirical</strong> and in most cases <strong style='color:#7abbe6'>conservative</strong>. <strong style='color:#7abbe6'>Judgement</strong> based on experience and physical modeling would help <strong style='color:#7abbe6'>reducing uncertainty</strong>.</li>
+
+<li class='fragment'>Read appendix D in the HEC-18 manual for a comprehensive example.</li>
+
+</ol>
+
+</section>
 
 
 
