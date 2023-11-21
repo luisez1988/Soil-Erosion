@@ -372,7 +372,7 @@ We can use a <strong style='color:#7abbe6'>modified Shields parameter</strong> t
 <div class='col'>
 <div class='defBox' name='Critical parameter' style='margin-top: 10px;margin-left: 0px;'>
 <div class='equationBox'>
-\(\Theta_m=\cfrac{U^2_m}{gD(1-n)(1-G_s)}\)
+\(\Theta_m=\cfrac{U^2_m}{gD(1-n)(G_s-1)}\)
 </div>
 </div>
 <p>\(U_m=\) maximum undisturbed orbital velocity at the bed <br>
@@ -391,48 +391,199 @@ We can use a <strong style='color:#7abbe6'>modified Shields parameter</strong> t
 
 <section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
 <h1>Scour with waves alone</h1>
+<div class='container'>
+<div class='col'>
+	<img src="FiguresGeneral/self_depth.PNG" width="100%">
+	<figcaption style="font-size: 0.8em; font-style: italic; margin-top: -30px;">From Summer et al (2001) </figcaption>
+</div>
+<div class='col'>
+<div class='textBox' style='margin-top: 0px;font-size: 1em;'> 
+Both, 	<strong style='color:#7abbe6'>scour depth</strong> and <span class='atb'> self burial </span> are function of the <strong style='color:#7abbe6'>Keulegan-Carpenter number</strong> \(KC\).
+</div>
 
+<p>Use: <br>
+<div class='equationBox'> \(\cfrac{S}{D}=0.1 \sqrt{KC}\) </div> <br>
+to get equilibrium scour depth for 	<strong style='color:#7abbe6'>live-bed</strong> scour.</p>
+</div>
+</div>
 </section>
 
 <section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
 <h1>Combined current and waves</h1>
+<div class='container'>
+<div class='col'>
+<img src="FiguresGeneral/waves_current_pipe.PNG" width="60%">
+<figcaption style="font-size: 0.8em;font-style: italic;margin-top: -30px;">From Summer and Fredsoe (2002)</figcaption>
+</div>
+<div class='col'>
+<div class='textBox' style='margin-top: 0px;font-size: 1em;'> To include the combined effect of waves and current use the 	<strong style='color:#7abbe6'>dimensionless velocity</strong> \(U_{cw}\)</div>
+<p>Use: <br>
+	<div class='equationBox'> \( \cfrac{S}{D}=\cfrac{S_c}{D} F\) </div> <br>
+\(F=\) factor depending on \(U_{cw}\) and \(KC\)<br>
+</p>
+</div>
+
+
+</div>
+</section>
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<p>Where: <br>
+<div class='equationBox'> \(F= \left\{ \begin{array}{ll} a\cfrac{5}{3}KC^a \exp (2.3b) &,\ 0 < U_{cw} \leq 0.7 \\ 
+	1 &,\ U_{cw} >0.7 </U_> \\
+	\end{array} \right. \) </div>
+
+</p>
+<div class='textBox' style='margin-top: 0px;font-size: 1em;'> Coefficients \(a\) and \(b\) are found using:</div>
+<div class='container'>
+<div class='col'>
+<div class='textBox' style='margin-top: 0px;font-size: 1em;'> 	<strong style='color:#7abbe6'>For \(0 < U_{cw} \leq 0.4\) </strong></div>
+
+<div class='equationBox'> \(a=0.557-0.912(U_{cw}-0.25)^2\) </div>
+
+<p></p>
+
+<div class='equationBox'> \(b=-1.14+2.24(U_{cw}-0.25)^2\) </div>
+
+</div>
+
+
+<div class='col'>
+	<div class='textBox' style='margin-top: 0px;font-size: 1em;'> 	<strong style='color:#7abbe6'>For \(0.4 < U_{cw} \leq 0.7\) </strong></div>
+
+
+	<div class='equationBox'> \(a=-2.14U_{cw}+1.46\) </div>
+
+<p></p>
+
+<div class='equationBox'> \(b=3.3U_{cw}-2.5\) </div>
+</div>
+</div>
 
 </section>
 
 <section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
 <h1>Problems associated with scour around submerged pipes</h1>
-
+<div class='container'>
+<div class='col'>
+<ul>
+	<li class='fragment'>Scour can make the pipeline to act as a 	<strong style='color:#7abbe6'>bean</strong></li>
+	<li class='fragment'>The additional 	<strong style='color:#7abbe6'>reaction forces </strong> in the soil can produce 	<strong style='color:#7abbe6'>bearing capacity failure</strong></li>
+	<li class='fragment'>Soil removal will 	<strong style='color:#7abbe6'>change</strong> the natural frequency of the pipeline. </li>
+	<li class='fragment'>Changes in natural frequency may produce 	<strong style='color:#7abbe6'>resonance</strong></li>
+</ul>
+</div>
+<div class='col'>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7lC5z3TnCA4rlZ2o3doepnSH7mcSkAJW2bAki2O2HKUcixpOPH1qOOKodCQN7hAelF-E&usqp=CAU" width="55%">
+</div>
+</div>
 </section>
 
 <section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
 <h1>Limitations of equations</h1>
-
+<ul>
+	<li class='fragment'>Only for 	<strong style='color:#7abbe6'>live-bed</strong> scour.</li>
+	<li class='fragment'>Developed from 	<strong style='color:#7abbe6'>flume experiment</strong> on 	<strong style='color:#7abbe6'>clean sand</strong></li>
+	<li class='fragment'>Still based on 	<strong style='color:#7abbe6'>scarce detasets</strong>  </li>
+	<li class='fragment'>Limited 	<strong style='color:#7abbe6'>geometrical</strong> configurations</li>
+</ul>
 </section>
 
 
 <section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
 <h1>Scour around breakwaters</h1>
+<div class='textBox' style='margin-top: 0px;font-size: 1em;'> 
+Breakwaters are structures built to 	<strong style='color:#7abbe6'>protect areas</strong> from waves. <br>
+There are two types of breakwaters: (i) <span class='atb'> vertical wall </span> breakwaters, and (ii) <span class='atb'> rubble mound </span> breakwaters.
+</div>
+<div class='container'>
+<div class='col'>
+<p><span class='atb'> Vertical wall </span> </p>
+<img src="https://ars.els-cdn.com/content/image/1-s2.0-S0378383919305472-gr1.jpg" width="100%"">
+</div>
+<div class='col'>
+<p> <span class='atb'> Rubble mound </span> </p>
+
+<img src="https://ascelibrary.org/cms/10.1061/(ASCE)WW.1943-5460.0000519/asset/1f37d4bf-8a68-42fa-ad50-514ad9a274f1/assets/images/large/figure14.jpg" width="100%">
+</div>
+<div class='col'>
+<p>Scour in the <span class='atb'> trunk </span> section occurs differently than in the <span class='atb'> head </span> section.</p>
+</div>
+</div>
 
 </section>
 
 <section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
 <h1>Scour at trunk section of breakwater</h1>
-
+<div class='container'>
+<div class='col'>
+<img src="FiguresGeneral/vertical_wall.PNG" width="100%">
+</div>
+<div class='col'>
+<img src="FiguresGeneral/ruble_mound.PNG" width="100%">
+</div>
+</div>
 </section>
 
 <section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
 <h1>Scour around the head of breakwater</h1>
+<div class='textBox' style='margin-top: 0px;font-size: 1em;'> Similar to bridge abutments, scour at the breakwater head is caused by 	<strong style='color:#7abbe6'>turbulent structures</strong>.</div>
 
+<img src="FiguresGeneral/turbulent_breakwater.PNG" width="60%">
+</section>
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<div class='container'>
+<div class='col'>
+<img src="FiguresGeneral/head_scour.PNG" width="100%">
+<figcaption style="font-size: 0.8em; font-style: italic; margin-top: -30px;"> From Sumer and Fredsoe (1997)</figcaption>
+</div>
+<div class='col'>
+<img src="FiguresGeneral/current_and_waves.PNG" width="100%">
+</div>
+</div>
 </section>
 
 <section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
 <h1>Ship propeller scour</h1>
+<div class='textBox' style='margin-top: 0px;font-size: 1em;'>  Ship propeller scour is complex process of sediment transport produced by the interaction between <span class='atb'> the propeller jet stream </span>, the bed, sediments, and structures.</div>
 
+<div class='container'>
+<div class='col'>
+<img src="https://www.researchgate.net/publication/347128332/figure/fig1/AS:970367980015616@1608365163078/Example-of-propeller-induced-jet-of-a-moving-ship-main-propulsion-without-rudder-39-40.jpg" width="100%">
+</div>
+<div class='col'>
+<ul>
+	<li class='fragment'>The jet stream can be <span class='atb'> obstructed </span> in the presence of a quay.</li>
+	<li class='fragment'>Mooring and docking maneuvers require complex use of propellers.</li>
+</ul>
+</div>
+</div>
+
+</section>
+
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<ul>
+	<li class='fragment'>Very complex to simulate.</li>
+	<li class='fragment'>Scour depth is function of several parameters including:
+		<ol>
+			<li class='fragment'>Propeller shape and configuration</li>
+			<li class='fragment'>Jet stream velocity</li>
+			<li class='fragment'> Vessel draught</li>
+			<li class='fragment'>Water depth</li>
+			<li class='fragment'>Distance to quay</li>
+			<li class='fragment'>Sediment size</li>
+		</ol>
+	</li>
+
+	<li class='fragment'>Not many empirical equations available. </li>
+</ul>
 </section>
 
   <section data-background-image="FiguresGeneral/Main_slide_Maine.svg">
 
-    </section>
+</section>
 
 
 
