@@ -251,17 +251,142 @@ Scour depth is a function of the <strong style='color:#7abbe6'>Keulegan-Carpente
 
 <section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
 <h1>Effect of shape</h1>
+<div class='container'>
+<div class='col'>
+<figure>
+<img src='FiguresGeneral/shape_1.PNG' width='100%'/>
+<footer style='margin-top: -30px;font-size: 0.8em;'> <em>From Summer et al (1993)</em> </footer>
+</figure>
+</div>
+<div class='col'>
+<figure>
+<img src='FiguresGeneral/shape_2.PNG' width='100%'/>
+<footer style='margin-top: -30px;font-size: 0.8em;'> <em>From Summer et al (1993)</em> </footer>
+</figure>
+</div>
+</div>
+</section>
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<div class='textBox' style='margin-top: 0px;margin-left: 0px;'>
+The previous figures show that the <strong style='color:#7abbe6'>shape</strong> of the pile has a <strong style='color:#7abbe6'>significant</strong> effect on the scour depth.
+</div>
+<div class='container'>
+<div class='col'>
+<p>For <strong style='color:#7abbe6'>square piles oriented at 90\(^o\)</strong> with respect to the flow use the following to account for wave effects only: <br>
+<div class='equationBox' style="font-size: 0.8em;">
+\(\cfrac{S}{S_c}= 1- \exp [-0.015(KC-11)] \)
+</div> <br>
+<ul>
+	<li>Use for <strong style='color:#7abbe6'>live-bed</strong> only.</li>
+	<li>Use for \(KC>11\) only.</li>
+</ul>
+</p>
+</div>
+<div class='col'>
+	<p>For <strong style='color:#7abbe6'>square piles oriented at 45\(^o\)</strong> with respect to the flow use the following to account for wave effects only: <br>
+		<div class='equationBox' style="font-size: 0.8em;">
+		\(\cfrac{S}{S_c}= 1- \exp [-0.019(KC-3)] \)
+		</div> <br>
+		<ul>
+			<li>Use for <strong style='color:#7abbe6'>live-bed</strong> only.</li>
+			<li>Use for \(KC>3\) only.</li>
+		</ul>
+		</p>
+</div>
+</div>
 
 </section>
 
 <section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
 <h1>Combined currents and waves</h1>
+<div class='textBox' style='margin-top: 0px;margin-left: 0px;'>
+Combined effects of waves and current are accounted using a <strong style='color:#7abbe6'>dimensionless</strong> velocity parameter.
+</div>
+
+<div class='container'>
+<div class='col'>
+<figure>
+<img src='FiguresGeneral/combined_2.PNG' width='100%'/>
+<footer style='margin-top: -50px;font-size: 0.8em;'> <em>From Summer and Fredsoe (2001)</em> </footer>
+</figure>
+</div>
+<div class='col'>
+<div class='defBox' name='Dimensionless velocity' style='margin-top: 10px;margin-left: 0px;'>
+<strong style='color:green'>\(U_{cw}\) </strong> is defined as: <br>
+<div class='equationBox'>
+\(U_{cw}=\cfrac{U_c}{U_c+U_w}\)
+</div>
+</div>
+
+<p> \(U_c=\) current velocity <br>
+\(U_w=\) wave velocity <br>
+<strong style='color:#7abbe6'>Note:</strong> \(U_w\) is not the wave celerity</p>
+</div>
+</div>
+</section>
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<div class='textBox' style='margin-top: 0px;margin-left: 0px;'>
+You can use the following expressions to account for <strong style='color:#7abbe6'>combined</strong> effects of <strong style='color:#7abbe6'>currents and waves</strong>:
+</div>
+
+<div class='equationBox' style="margin-top: 50px;">
+\(\cfrac{S}{D}= \cfrac{S_c}{D}[1- \exp \{-A(KC-B)\}]\)
+</div>
+
+<p>where: <br>
+\(A= 0.03+ 0.75 U_{cw}^2.6\) <br>
+\(B= 6 \exp(-4.7 U_{cw})\) <br>
+Are empirical fitting coefficients</p>
 
 </section>
 
 <section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
 <h1>Scour below pipelines</h1>
+<div class='textBox' style='margin-top: 0px;margin-left: 0px;'>
+Scour in buried pipelines occurs because of <span class='atb'>pressure gradients</span> upstream and downstream of the pipeline. This generates <span class='atb'>seepage</span> underneath and subsequent <span class='atb'>liquefaction</span>.
+</div>
+<div class='container'>
+<div class='col'>
+<figure>
+<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNVLZk90kQ0gZO2ekOvqAzpSfmdE6Dh6ZXKZil1xiMNL_gGlL_OWQQp5sA72uqNZq4f_s&usqp=CAU' width=80%/>
+<footer style='margin-top: px;font-size: 0.8em;'> <em></em> </footer>
+</figure>
+</div>
+<div class='col'>
 
+<iframe width="100%"  height="350px" src='https://www.youtube.com/embed/ew6GxO4YNVI?si=DEcTmCJOnHfEKtnM?autoplay=1' ></iframe>
+
+</div>
+</div>
+
+</section>
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<h1>Onset of scour</h1>
+<div class='textBox' style='margin-top: 0px;margin-left: 0px;'>
+We can use a <strong style='color:#7abbe6'>modified Shields parameter</strong> to estimate the onset of scour in buried pipelines.
+</div>
+<div class='container'>
+<div class='col'>
+<div class='defBox' name='Critical parameter' style='margin-top: 10px;margin-left: 0px;'>
+<div class='equationBox'>
+\(\Theta_m=\cfrac{U^2_m}{gD(1-n)(1-G_s)}\)
+</div>
+</div>
+<p>\(U_m=\) maximum undisturbed orbital velocity at the bed <br>
+\(D=\) characteristic length <br>
+\(n=\) porosity <br>
+\(G_s=\) specific gravity	</p>
+</div>
+<div class='col'>
+<figure>
+<img src='https://ars.els-cdn.com/content/image/1-s2.0-S0378383900000661-gr12.gif' width='80%'/>
+<footer style='margin-top: px;font-size: 0.8em;'> <em></em> </footer>
+</figure>
+</div>
+</div>
 </section>
 
 <section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
