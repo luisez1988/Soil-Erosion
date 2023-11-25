@@ -371,6 +371,92 @@ Note that for incompressible flow we must add the <span class='atb'>continuity e
 </section>
 
 
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<h1>Eddy Viscosity</h1>
+<div class='textBox' style='margin-top: 0px;margin-left: 0px;'>
+<strong style='color:#7abbe6'>Boussinesq</strong> proposed to simulate the turbulent diffusion as a <span class='atb'>molecular diffusion</span> process. He termed this process as <span class='atb'>eddy viscosity</span> <br>
+ <div class='equationBox'>
+ \(- \overline{\mathbf{u}' \otimes \mathbf{u}'}= \nu_t (\nabla \overline{\mathbf{U}} + \nabla \overline{\mathbf{U}}^T  )- \cfrac{2}{3} k \mathbf{I} \)
+ </div>
+</div>
+
+<p>\(\nu_t=\) Eddy viscosity <br>
+\(k= \cfrac{1}{2} \text{tr}(\overline{\mathbf{u}' \otimes \mathbf{u}'})\) is the kinetic energy of the turbulent fluctuations.
+</p>
+
+</section>
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<h1>Prandtl's mixing length concept</h1>
+
+<div class='textBox' style='margin-top: 0px;margin-left: 0px;'>
+Prandtl realized that the eddy viscosity is <strong style='color:#7abbe6'>not a constant</strong> and proposed a <span class='atb'>mixing length concept</span>. He proposed this along with the concept of <strong style='color:#7abbe6'>boundary layers</strong>. <br>
+
+<div class='equationBox' style="margin-left: 250px;">
+\(\nu_t=\left|\cfrac{\partial u}{\partial y} \right| l^2_m\)
+</div>
+</div>
+<p>\(l_m=\) Is the <strong style='color:#7abbe6'>mixing length</strong>. This is a function of observed boundary layers and must be calibrated accordingly.</p>
+</section>
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+
+<iframe class='stretch' src='https://www.youtube.com/embed/zIQpxmLwbXQ?si=jXB7IpamWHHKvym8?autoplay=0' ></iframe>
+
+
+</section>
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<h1>\(k-\varepsilon\) Turbulent model</h1>
+
+<div class='textBox' style='margin-top: 0px;margin-left: 0px;'>
+The <strong style='color:#7abbe6'>\(k-\varepsilon\)</strong> model is a <span class='atb'>two-equation</span> model. It is based on the <strong style='color:#7abbe6'>transport equations</strong> for the <strong style='color:#7abbe6'>turbulent kinetic energy</strong> \(k\) and the <strong style='color:#7abbe6'>turbulent dissipation rate</strong> \(\varepsilon\). <br>
+
+<div class='equationBox' style="margin-left: 250px;">
+\(\nu_t= \rho C_{\mu} \cfrac{k^2}{\varepsilon}\)
+</div>
+</div>
+
+<p>\(C_\mu=0.89\) Empirical constant</p>
+
+<div class='textBox' style='margin-top: 0px;margin-left: 0px;'>
+Transport equations are defined for both \(k\) and \(\varepsilon\): <br>
+Rate of change of \(k|\varepsilon\) + Transport of \(k|\varepsilon\) = Transport of \(k|\varepsilon\) by diffusion + Production of \(k|\varepsilon\) + Dissipation of \(k|\varepsilon\)
+</div>
+
+</section>
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<h1>The CFD world</h1>
+<div class='textBox' style='margin-top: 0px;margin-left: 0px;'>
+<strong style='color:#7abbe6'>Computational fluid dynamics</strong> is a <strong style='color:#7abbe6'>inter- abd muli-disciplinary</strong> field that combines <span class='atb'>fluid mechanics</span>, <span class='atb'>numerical analysis</span>, and <span class='atb'>computer science</span> to <strong style='color:#7abbe6'>solve</strong> and <strong style='color:#7abbe6'>analyze</strong> problems that involve <span class='atb'>fluid flows</span>. 
+</div>
+
+<p>Available CFD techniques:</p>
+
+<div class='container'>
+<div class='col'>
+<ul>
+	<li class='fragment'>Direct modeling</li>
+	<li class='fragment'>RANS modeling</li>
+	<li class='fragment'>\(k-\varepsilon\) model</li>
+	<li class='fragment'>\(k- \omega\) modeling</li>
+	
+</ul>
+</div>
+<div class='col'>
+<ul>
+<li class='fragment'>Spalart-Allmaras model</li>
+<li class='fragment'>Large Eddy Simulation (LES)</li>
+<li class='fragment'>Detached Eddy Simulation (DES)</li>
+<li class='fragment'>And counting...</li>
+
+
+</ul>
+</div>
+</div>
+</section>
+
 
 
 <section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
