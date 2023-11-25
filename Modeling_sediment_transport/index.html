@@ -286,9 +286,91 @@ We can use Navier-Stokes equations to model complex flow problems. However:
 
 
 <section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
-<h1>Reynolds quantities</h1>
+<h1>Reynolds decomposition</h1>
+<div class='textBox' style='margin-top: 0px;margin-left: 0px;'>
+The <strong style='color:#7abbe6'>Reynolds decomposition</strong> is a <span class='atb'>statistical</span> approach to model <span class='atb'>turbulence</span>. It is based on the assumption that the <strong style='color:#7abbe6'>velocity</strong> can be decomposed into a <strong style='color:#7abbe6'>mean</strong> and a <strong style='color:#7abbe6'>fluctuating</strong> component.
+</div>
+
+<div class='container'>
+<div class='col'>
+<div class="fragment"> 
+	<p>Thus, we can write:  <br> 
+
+		<div class='equationBox'>
+			\(\mathbf{v}= \bar{\mathbf{U}} + \mathbf{u}'\)
+		</div>
+	 <br>
+	\(\bar{\mathbf{U}} =\) mean velocity, \(\mathbf{u}'=\) fluctuating velocity</p>
+	</p>
+</div>
+</div>
+<div class='col'>
+<figure>
+<img src='https://www.researchgate.net/publication/282649760/figure/fig3/AS:682709504495632@1539782038975/elocity-fluctuations-for-stead-y-lam-inar-a-n-d-turbulent-flow.ppm' width='100%'/>
+<footer style='margin-top: px;font-size: 0.8em;'> <em></em> </footer>
+</figure>
+</div>
+</div>
 
 </section>
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<div class='defBox' name='Time averaging' style='margin-top: 0px;margin-left: 0px;'>
+Is the average value over time of a state parameter \((*)\). <br>
+<div class='equationBox'>
+\(\overline{(*)}= \lim_{T \rightarrow \infty} \cfrac{1}{T}  \operatorname{\Large \int}_0^T (*) dt  \)
+</div>
+</div>
+
+<div class='textBox' style='margin-top: 20px;margin-left: 0px;'>
+This procedure is applied to derive the <strong style='color:#7abbe6'>Reynolds-averaged Navier-Stokes (RANS)</strong> equations. <br>
+
+<div class='equationBox' style="font-size: 0.8em;">
+\( \rho (  \textcolor{blue}{\underbrace{\overline{\mathbf{U}}_t}_{\substack{\text{Velocity} \\ \text{change}}}}    +\textcolor{red}{\underbrace{\overline{\mathbf{U}} \cdot \nabla \overline{\mathbf{U}}}_{\text{Advection}}})= \textcolor{green}{\underbrace{- \nabla \overline{p}}_{\substack{ \text{Pressure} \\ \text{diffusion}}}} +     \textcolor{purple}{ \underbrace{\nabla \cdot \mu (\nabla \overline{\mathbf{U}}+ \nabla \overline{\mathbf{U}}^T)}_{\substack{\text{Laminar} \\ \text{diffusion}}}}- \textcolor{brown}{ \underbrace{\nabla \cdot \rho \overline{\mathbf{u'} \otimes  \mathbf{u'}}}_{\substack{\text{Turbulent} \\ \text{diffusion}}}} \)
+</div>
+</div>
+<ul>
+	<li class='fragment'>The term \( \mathbf{R}=\rho \overline{\mathbf{u'} \otimes \mathbf{u'}}\) is a 2nd order tensor also known as <span class='atb'>Reynolds stress tensor</span></li>
+</ul>
+
+</section>
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<div class='textBox' style='margin-top: 0px;margin-left: 0px;'>
+Note that for incompressible flow we must add the <span class='atb'>continuity equation</span> to the RANS equations: <br>
+<div class='equationBox' style="margin-left: 300px;">
+\(\nabla \cdot \overline{\mathbf{U}}=0 \)
+</div> <br>
+
+<br>
+
+<div class='equationBox' style="margin-left: 300px;">
+\(\nabla \cdot \mathbf{u}'=0\)
+</div>
+</div>
+
+<p><strong style='color:#7abbe6'>Note:</strong> We have <strong style='color:#7abbe6'>added</strong> six new unknowns to the governing equation. We need to <strong style='color:#7abbe6'>relate \(\mathbf{R}\)</strong> to the average values to <strong style='color:#7abbe6'>solve</strong> the problem. These relationships are known as <span class='atb'>closure models</span></p>
+
+
+
+<p>For detailed information about RANS derivation watch the next two videos.  </p>
+
+
+
+
+</section>
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+	<iframe class="stretch" src='https://www.youtube.com/embed/mDt-HJEXK6g?si=51Z_pJT1di9jBMOO?autoplay=0' ></iframe>
+
+</section>
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+
+	<iframe class="stretch" src='https://www.youtube.com/embed/pe6AxHpvBJU?si=y35n9tyAfAcSxMZR?autoplay=0' ></iframe>
+</section>
+
+
 
 
 <section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
