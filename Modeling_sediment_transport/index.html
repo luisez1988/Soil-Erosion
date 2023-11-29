@@ -457,6 +457,33 @@ Rate of change of \(k|\varepsilon\) + Transport of \(k|\varepsilon\) = Transport
 </div>
 </section>
 
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<img src="FiguresGeneral/numerical_results_combined.svg" width="90%">
+</section>
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<div class='textBox' style='margin-top: 0px;font-size: 1em;'> Note that for water scour problems, you require to simulate a <span class='atb'> free surface </span> problem.</div>
+
+<ul>
+	<li class='fragment'>You can use a double phase model (two-liquids) simulating the water-air interface.</li>
+	<li class='fragment'>Level-set methods are aso used to model the free surface evolution.</li>
+	<li class='fragment'>CFD models might be used for local scour simulations like scour around piers. It would be too expensive for 	<strong style='color:#7abbe6'>large-scale</strong> models.</li>
+	<li class='fragment'>For 	<strong style='color:#7abbe6'>large-scale</strong> problems 	<strong style='color:#7abbe6'>depth averaged models</strong> are used.</li>
+</ul>
+</section>
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<h1>Depth averaged governing equations</h1>
+<div class='textBox' style='margin-top: 0px;font-size: 1em;'>	<strong style='color:#7abbe6'>Depth averaged equations</strong> are used to <span class='atb'> reduce a dimension  </span> of the problem, while allowing to simulate <span class='atb'> free surface </span> problems. Thus, they are 	<strong style='color:#7abbe6'>computationally efficient</strong> and can be used in 	<strong style='color:#7abbe6'>large-scale</strong> modeling.  </div>
+
+<p>There are some 	<strong style='color:#7abbe6'>key assumptions</strong> made for 2D depth averaged solutions:
+<ul>
+	<li class='fragment'>Flow in the vertical direction is 	<strong style='color:#7abbe6'>negligible</strong> \(\implies \frac{\partial \bar{p}}{\partial z}= - \rho g\)</li>
+</ul>
+</p>
+
+</section>
+
 
 
 <section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
