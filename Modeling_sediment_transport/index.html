@@ -429,7 +429,7 @@ Rate of change of \(k|\varepsilon\) + Transport of \(k|\varepsilon\) = Transport
 <section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
 <h1>The CFD world</h1>
 <div class='textBox' style='margin-top: 0px;margin-left: 0px;'>
-<strong style='color:#7abbe6'>Computational fluid dynamics</strong> is a <strong style='color:#7abbe6'>inter- abd muli-disciplinary</strong> field that combines <span class='atb'>fluid mechanics</span>, <span class='atb'>numerical analysis</span>, and <span class='atb'>computer science</span> to <strong style='color:#7abbe6'>solve</strong> and <strong style='color:#7abbe6'>analyze</strong> problems that involve <span class='atb'>fluid flows</span>. 
+<strong style='color:#7abbe6'>Computational fluid dynamics</strong> is a <strong style='color:#7abbe6'>inter- and muli-disciplinary</strong> field that combines <span class='atb'>fluid mechanics</span>, <span class='atb'>numerical analysis</span>, and <span class='atb'>computer science</span> to <strong style='color:#7abbe6'>solve</strong> and <strong style='color:#7abbe6'>analyze</strong> problems that involve <span class='atb'>fluid flows</span>. 
 </div>
 
 <p>Available CFD techniques:</p>
@@ -484,6 +484,40 @@ Rate of change of \(k|\varepsilon\) + Transport of \(k|\varepsilon\) = Transport
 
 </section>
 
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<div class='container'>
+<div class='col'>
+<img src="FiguresGeneral/sketch.PNG" width="100%">
+</div>
+<div class='col'>
+<div class='textBox' style='margin-top: 0px;font-size: 1em;'> Based on the coordinate system on the left we can now define a <span class='atb'> depth averaging </span> operator. </div>
+
+<div class='defBox' name='Depth average operator' style='margin-top: 15px;font-size: 1em;'> 	<strong style='color:green'>\(\tilde{*}_z\) </strong> 
+	<div class='equationBox'> \(\tilde{*}_z= \cfrac{1}{H} \int_{-h}^{\eta} * dz \) </div></div>
+
+	<p>\(H= \eta+h\) is the water depth. <br>
+	\(\eta=\) water elevation from datum. <br>
+	\(h=\) water depth from datum.</p>
+</div>
+</div>
+
+</section>
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<h1>Shallow water equations</h1>
+<div class='textBox' style='margin-top: 0px;font-size: 1em;'> The <span class='atb'>shallow water equations</span> are derived from the depth averaged Navier-Stokes equations. </div>
+<p>	<strong style='color:#7abbe6'>Continuity equation (mass balance)</strong> <br>
+<div class='equationBox' style="margin-left: 250px;"> \(\cfrac{\partial \eta}{\partial t}+ \nabla \cdot (\tilde{\boldsymbol{U}})=0\) </div></p>
+
+<div class='textBox' style='margin-top: 0px;font-size: 1em;'> 	<strong style='color:#7abbe6'>Note:</strong> the gradient operator is different for 2D conditions: <br>
+\(\nabla= \left(\cfrac{\partial}{\partial x}, \ \cfrac{\partial}{\partial y}\right)\)</div>
+</section>
+
+<section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
+<p>	<strong style='color:#7abbe6'>Momentum balance equation</strong> <br>
+<div class='equationBox' > \(\cfrac{\partial \tilde{\boldsymbol{U}}}{\partial t}+ \tilde{\boldsymbol{U}} \cdot \nabla \tilde{\boldsymbol{U}}= -g \nabla \eta  +\nabla \cdot \tilde{\overline{\boldsymbol{\sigma}-\hat{\boldsymbol{u}} \otimes \hat{\boldsymbol{u}}}} + \cfrac{1}{H \tilde{\rho}} (\boldsymbol{\tau}^s- \boldsymbol{\tau}^b) \) </div></p>
+</p>
+</section>
 
 
 <section data-background-image='FiguresGeneral/Normal_slide_Maine.svg'>
